@@ -1,6 +1,10 @@
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 
-export function sendEmail(formData) {
+interface FormData {
+  [key: string]: any;
+}
+
+export function sendEmail(formData: FormData): void {
   emailjs
     .send("service_if6mny5", "template_2qmtqmk", formData, "FIqdnKSB_EFOozCjN")
     .then((res) => {

@@ -51,7 +51,7 @@ const MenuItems = styled.div<MenuItemsProps>`
   position: absolute;
   top: 50px;
   right: 0;
-  background-color: white;
+  background-color: black;
   width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -76,7 +76,7 @@ const MenuItems = styled.div<MenuItemsProps>`
 
 const MenuItem = styled(Link)`
   display: flex;
-  color: #333;
+  color: #ffff;
   text-decoration: none;
   padding: 10px 15px;
   justify-content: space-between;
@@ -103,17 +103,17 @@ const Menu: React.FC = () => {
 
   return (
     <MenuWrapper>
-      <Link to="/"><img src="./img/logo (1).png" height={60} alt="Logo" /></Link>
+      <Link to="/"><img src="./img/ms.jpg" height={60} alt="Logo" /></Link>
       <MenuButton onClick={toggleMenu}>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
       </MenuButton>
       <MenuItems open={open}>
-        <MenuItem to="/Nosotros" onClick={handleItemClick}>Acerca de Nosotros</MenuItem>
-        <MenuItem to="/Trabajos" onClick={handleItemClick}>Portafolio</MenuItem>
-        <MenuItem to="/Promo" onClick={handleItemClick}>Ofertas</MenuItem>
-        <MenuItem to="/contacto" onClick={handleItemClick}>Contacto</MenuItem>
+        <MenuItem to="/Nosotros" onClick={handleItemClick}>Taller Mecanico Integral</MenuItem>
+        <MenuItem to="/Trabajos" onClick={handleItemClick}>Servicios</MenuItem>
+        <MenuItem to="/Promo" onClick={handleItemClick}>Descuentos Especiales</MenuItem>
+        <MenuItem to="/ontacto" onClick={handleItemClick}>Contacto</MenuItem>
         <MenuItem to="/Redes" onClick={handleItemClick}>Redes sociales</MenuItem>
       </MenuItems>
     </MenuWrapper>

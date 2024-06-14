@@ -1,0 +1,31 @@
+.top{
+    background-color: black;
+    height:auto;
+    display:flex;
+
+
+margin: auto;
+}
+.top p{
+    color:whitesmoke;
+    text-align: center;
+    margin: auto;
+}
+
+.top a {
+    text-decoration: none;
+    color:whitesmoke
+}
+@media only screen and (max-width: 760px) {
+    .top{
+      
+    height: auto;
+    
+    }
+    .top p{
+    font-size: 10px;
+     margin: auto;    }
+     .top a {
+      font-size: 10px;
+    }
+}

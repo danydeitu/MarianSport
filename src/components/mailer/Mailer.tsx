@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { sendEmail } from "./email.js";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import { sendEmail } from "./email";
 import styled from 'styled-components';
-import './Mailer.css'
+import './Mailer.css';
+
 const MailerContainer = styled.div`
   max-width: 600px;
   margin: 0 auto;
@@ -62,7 +63,6 @@ const ContactoTitle = styled.h3`
 
 const ContactoInfo = styled.h4`
   margin-bottom: 10px;
- 
 `;
 
 const ContactoLink = styled.a`
@@ -70,19 +70,26 @@ const ContactoLink = styled.a`
   text-decoration: none;
 `;
 
-function Mailer() {
-  const [formData, setFormData] = useState({
+interface FormData {
+  name: string;
+  number: string;
+  email: string;
+  message: string;
+}
+
+const Mailer: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     number: "",
     email: "",
     message: "",
   });
 
-  const handleChange = (event) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     sendEmail(formData);
     setFormData({ name: "", number: "", email: "", message: "" });
@@ -136,11 +143,10 @@ function Mailer() {
 
       <ContactoContainer>
         <ContactoTitle>Dejanos tu consulta</ContactoTitle>
-        <ContactoInfo>Llamanos o escribinos por nuestras redes sociales.</ContactoInfo>
-
-        <ContactoInfo>Armamos tu presupuesto a medida.</ContactoInfo>
-        <p><ContactoLink href="tel:+5401140941119"><i className="fa fa-phone fa-rotate-90"></i> +5401140941119</ContactoLink></p>
-        <p><ContactoLink href="mailto/danydeitu18@gmail.com"><i className="fa fa-envelope"></i> disenosdanyweb@gmail.com</ContactoLink></p>
+        <ContactoInfo>Llamanos o escribinos</ContactoInfo>
+        <ContactoInfo>Trabajos en el día</ContactoInfo>
+        <p><ContactoLink href="tel:+5401137684577"><i className="fa fa-phone fa-rotate-90"></i> +5401137684577</ContactoLink></p>
+        <p><ContactoLink href="mailto:danydeitu18@gmail.com"><i className="fa fa-envelope"></i> mariansport@gmail.com</ContactoLink></p>
       </ContactoContainer>
     </MailerContainer>
   );
