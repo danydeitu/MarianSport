@@ -112,7 +112,7 @@ const Menu: React.FC = () => {
       <MenuItems open={open}>
         <MenuItem to="/Nosotros" onClick={handleItemClick}>Taller Mecanico Integral</MenuItem>
         <MenuItem to="/Trabajos" onClick={handleItemClick}>Servicios</MenuItem>
-        <MenuItem to="/ubicacion" onClick={handleItemClick}>Ubicacion de Nuestro taller</MenuItem>
+        <MenuItem to="/ubicacion" onClick={handleItemClick}>Ubicacion del taller</MenuItem>
         <MenuItem to="/Contacto" onClick={handleItemClick}>Contacto</MenuItem>
         <MenuItem to="/Redes" onClick={handleItemClick}>Redes sociales</MenuItem>
       </MenuItems>
