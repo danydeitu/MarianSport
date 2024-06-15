@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <Routes>
       
         <Route path="/Nosotros" Component={About} />
-        <Route path="/  Contacto" Component={Mailer} />
+        <Route path="/Contacto" Component={Mailer} />
         <Route path="/Redes" Component={Footer} />
        
       </Routes>
