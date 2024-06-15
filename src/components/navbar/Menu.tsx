@@ -6,6 +6,7 @@ const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+   position: relative;
 `;
 
 const MenuButton = styled.button`
@@ -48,7 +49,7 @@ interface MenuItemsProps {
 }
 
 const MenuItems = styled.div<MenuItemsProps>`
-  position: absolute;
+  position: fixed;
   top: 50px;
   right: 0;
   background-color: black;
@@ -75,7 +76,7 @@ const MenuItems = styled.div<MenuItemsProps>`
 `;
 
 const MenuItem = styled(Link)`
-  display: flex;
+  display:block;
   color: #ffff;
   text-decoration: none;
   padding: 10px 15px;
