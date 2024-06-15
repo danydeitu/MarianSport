@@ -1,6 +1,6 @@
-// App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Navbar from './components/navbar/Menu';
 
 import About from './components/about/About';
@@ -18,9 +18,9 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
       
-        <Route path="/Nosotros" element={About} />
-    
-        <Route path="/Footer" component={Footer} />
+        <Route path="/Nosotros" Component={About} />
+        <Route path="/  Contacto" Component={Mailer} />
+        <Route path="/Redes" Component={Footer} />
        
       </Routes>
    

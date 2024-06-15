@@ -103,7 +103,7 @@ const Menu: React.FC = () => {
 
   return (
     <MenuWrapper>
-      <Link to="/"><img src="./img/ms.jpg" height={100} width={120} alt="Logo" /></Link>
+      <Link to="/"><img src="./img/ms.jpg" height={80} width={120} alt="Logo" /></Link>
       <MenuButton onClick={toggleMenu}>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
@@ -113,7 +113,7 @@ const Menu: React.FC = () => {
         <MenuItem to="/Nosotros" onClick={handleItemClick}>Taller Mecanico Integral</MenuItem>
         <MenuItem to="/Trabajos" onClick={handleItemClick}>Servicios</MenuItem>
         <MenuItem to="/Promo" onClick={handleItemClick}>Descuentos Especiales</MenuItem>
-        <MenuItem to="/ontacto" onClick={handleItemClick}>Contacto</MenuItem>
+        <MenuItem to="/Contacto" onClick={handleItemClick}>Contacto</MenuItem>
         <MenuItem to="/Redes" onClick={handleItemClick}>Redes sociales</MenuItem>
       </MenuItems>
     </MenuWrapper>
