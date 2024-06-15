@@ -103,7 +103,7 @@ const Menu: React.FC = () => {
 
   return (
     <MenuWrapper>
-      <Link to="/"><img src="./img/ms.jpg" height={60} alt="Logo" /></Link>
+      <Link to="/"><img src="./img/ms.jpg" height={100} width={120} alt="Logo" /></Link>
       <MenuButton onClick={toggleMenu}>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>
         <MenuIcon className={open ? 'open' : ''}></MenuIcon>

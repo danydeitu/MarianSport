@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <a href="mailto:@gmail.com"
             target="_blank"
             rel="noreferrer">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i className="fa fa-envelope" aria-hidden="true"></i>
           </a>
           <a href="https://wa.me/+5401137684577" target="_blank" rel="noreferrer">
             <i className="fab fa-whatsapp whatsapp"></i></a>

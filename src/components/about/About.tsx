@@ -21,7 +21,7 @@ const About: React.FC  = () => {
       </div>
       <div className="about-img">
         <img
-          src="\img\ms.jpg"  width="750" height="550" 
+          src="\img\banner.jpg"  width="800" height="650" 
           alt="about"/>
       </div>
     </div>
