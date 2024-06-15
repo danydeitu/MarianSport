@@ -34,7 +34,7 @@
 
 .about-img {
   width: 100%;
-  height:80%;
+  height:70%;
   display: flex;
   align-self: center;
   overflow: hidden;
@@ -71,7 +71,7 @@ color:#181D31;
   }
   .about-img {
     width: 100%;
-  
+    height:60%;
     margin-bottom: 50px;
   }
 
