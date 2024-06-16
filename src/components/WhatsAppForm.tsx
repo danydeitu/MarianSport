@@ -81,7 +81,7 @@ const WhatsAppForm: React.FC = () => {
       <FormGroup>
         <FormTextarea
           name="message"
-          placeholder="Tu mensaje"
+          placeholder="Tu consulta"
           value={formData.message}
           onChange={handleChange}
           required
