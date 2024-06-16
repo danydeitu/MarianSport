@@ -11,6 +11,7 @@ import Top from './components/top/Top';
 
 import './App.css';
 import MapComponent from './components/MapComponent';
+import WhatsAppForm from './components/WhatsAppForm';
 const App: React.FC = () => {
   
   return (
@@ -21,13 +22,13 @@ const App: React.FC = () => {
       <Routes>
       
         <Route path="/Nosotros" Component={About} />
-        <Route path="/Contacto" Component={Mailer} />
+        <Route path="/Contacto" Component={WhatsAppForm} />
         <Route path="/Redes" Component={Footer} />
         <Route path="/ubicacion" Component={MapComponent} />
       </Routes>
    
       <About/>
-      <Mailer/>
+      <WhatsAppForm/>
       <MapComponent/>
       <Footer/>
     </Router>
