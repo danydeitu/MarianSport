@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <div className="design-by">
         <p>Seguinos en Nuestras Redes Sociales </p></div>
         <div className="sns-links">
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/Mariansportt" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram instagram "></i></a>
           <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook facebook" ></i>

@@ -5,7 +5,7 @@ const Top: React.FC = () => {
 return(
     <div className='top'>
     <p>- Taller Mecanico Integral</p>
-     <p><a href="tel:+5401126895031" target="_blank" rel="noreferrer">Llamanos 5401137684577</a></p>
+     <p><a href="tel:01137684577" target="_blank" rel="noreferrer">Llamanos 01137684577</a></p>
     
 
        
