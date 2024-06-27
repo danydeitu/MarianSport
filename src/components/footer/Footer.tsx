@@ -5,8 +5,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer-container">
       <div className="footer-info">
-        <h6>Presupuestos en el dia c/s cargo</h6>
-        <h4>Estamos en Tribulato 1825 San Miguel</h4>
+      <h4>Estamos en Tribulato 1825 San Miguel</h4>
+        <h6>Presupuestos en el dia sin cargo</h6>
+        
       </div>
       
       <div className="footer-sns">

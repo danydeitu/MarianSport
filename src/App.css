@@ -23,6 +23,16 @@
   }
 }
 
+.map-wrapper {
+  display: flex;
+ justify-content: center;
+  align-items: center;
+margin:10px
+}
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

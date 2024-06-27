@@ -41,7 +41,7 @@ const FormButton = styled.button`
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  background-color: #25d366;
+  background-color: red;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -67,12 +67,12 @@ const WhatsAppForm: React.FC = () => {
 
   return (
     <FormContainer onSubmit={handleSubmit}>
-      <FormTitle>Envianos un mensaje por WhatsApp</FormTitle>
+      <FormTitle>Envianos tu consulta</FormTitle>
       <FormGroup>
         <FormInput
           type="text"
           name="name"
-          placeholder="Tu nombre"
+          placeholder="Nombre"
           value={formData.name}
           onChange={handleChange}
           required
@@ -81,7 +81,7 @@ const WhatsAppForm: React.FC = () => {
       <FormGroup>
         <FormTextarea
           name="message"
-          placeholder="Tu consulta"
+          placeholder="Consulta"
           value={formData.message}
           onChange={handleChange}
           required

@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import '../App.css';
 
 // Corregir el problema de los íconos en Leaflet con Webpack/Parcel
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -23,19 +24,28 @@ const MapComponent: React.FC = () => {
   };
 
   return (
-    <MapContainer center={position} zoom={13} style={{ height: '400px', width: '100%' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={position} eventHandlers={{ click: handleMarkerClick }}>
-        <Popup>
-          <a href={`https://www.google.com/maps/search/?api=1&query=${position[0]},${position[1]}`} target="_blank" rel="noopener noreferrer">
-            Tribulato 1825 San Miguel ,Buenos Aires, Argentina. Haz clic para ver en Google Maps.
-          </a>
-        </Popup>
-      </Marker>
-    </MapContainer>
+  
+    <div className="map-wrapper">
+        
+      <MapContainer center={position} zoom={13} style={{ height: '300px', width: '60%'}}>
+     
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        
+        <Marker position={position} eventHandlers={{ click: handleMarkerClick }}>
+          
+          <Popup>
+            <a href={`https://www.google.com/maps/search/?api=1&query=${position[0]},${position[1]}`} target="_blank" rel="noopener noreferrer">
+              Tribulato 1825 San Miguel, Buenos Aires, Argentina. Haz clic para ver en Google Maps.
+            </a>
+          </Popup>
+        </Marker>
+        
+      </MapContainer>
+  
+    </div>
   );
 };
 
